@@ -7,7 +7,7 @@ import (
 
 type OrderOther struct {
 	ID      int64 `gorm:"primarykey"`
-	UserID  int64
+	UserID  uint64
 	Product string
 	Deleted gorm.DeletedAt
 
