@@ -43,8 +43,7 @@ db.Use(sharding.Register(sharding.Config{
 }, "orders", Notification{}, AuditLog{}))
 // This case for show up give notifications, audit_logs table use same sharding rule.
 ```
-
-also can use model to register sharding tables.
+support multiple config with multiple model register
 model must implement ShardingInterface
 example: base_test.go
 ```go
